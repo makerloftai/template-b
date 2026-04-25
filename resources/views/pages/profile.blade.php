@@ -1,3 +1,11 @@
+<?php
+
+use function Laravel\Folio\{middleware, name};
+
+middleware(['auth']);
+name('profile');
+
+?>
 <x-app-layout>
     <x-slot name="header">
         <h2 class="font-semibold text-xl text-gray-800 leading-tight">
